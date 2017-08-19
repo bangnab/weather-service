@@ -3,6 +3,12 @@ package info.tmingr.weatherservice.rest.wuapi.wuadapter;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
+import info.tmingr.weatherservice.rest.wuapi.HourForecast;
+import info.tmingr.weatherservice.rest.wuapi.LocationVO;
+import info.tmingr.weatherservice.rest.wuapi.WeatherForecast;
+import info.tmingr.weatherservice.rest.wuapi.WeatherProvider;
+
+import javax.enterprise.context.Dependent;
 import info.tmingr.weatherservice.rest.wuapi.LocationVO;
 import info.tmingr.weatherservice.rest.wuapi.HourForecast;
 import info.tmingr.weatherservice.rest.wuapi.WeatherForecast;
@@ -13,6 +19,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Dependent
 public class WUWeatherProviderImpl implements WeatherProvider {
 
     @Override
