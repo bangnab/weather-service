@@ -1,4 +1,4 @@
-package info.tmingr.weatherservice.rest.wuapi;
+package info.tmingr.weatherservice.domain;
 
 public class LocationVO {
     String country;

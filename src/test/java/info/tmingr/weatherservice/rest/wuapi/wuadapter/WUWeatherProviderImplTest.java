@@ -1,6 +1,6 @@
 package info.tmingr.weatherservice.rest.wuapi.wuadapter;
 
-import info.tmingr.weatherservice.rest.wuapi.WeatherForecast;
+import info.tmingr.weatherservice.domain.WeatherForecast;
 import org.junit.Test;
 
 import java.io.File;

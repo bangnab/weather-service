@@ -1,7 +1,7 @@
 package info.tmingr.weatherservice.rest;
 
-import info.tmingr.weatherservice.rest.wuapi.WeatherForecast;
-import info.tmingr.weatherservice.rest.wuapi.WeatherProvider;
+import info.tmingr.weatherservice.domain.WeatherForecast;
+import info.tmingr.weatherservice.domain.WeatherProvider;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -11,8 +11,6 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Application;
 import javax.ws.rs.core.Response;
-import java.util.HashSet;
-import java.util.Set;
 
 @ApplicationScoped
 @ApplicationPath("/")

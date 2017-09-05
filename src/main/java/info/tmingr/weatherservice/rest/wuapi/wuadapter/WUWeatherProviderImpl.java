@@ -3,17 +3,12 @@ package info.tmingr.weatherservice.rest.wuapi.wuadapter;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
-import info.tmingr.weatherservice.rest.wuapi.HourForecast;
-import info.tmingr.weatherservice.rest.wuapi.LocationVO;
-import info.tmingr.weatherservice.rest.wuapi.WeatherForecast;
-import info.tmingr.weatherservice.rest.wuapi.WeatherProvider;
+import info.tmingr.weatherservice.domain.HourForecast;
+import info.tmingr.weatherservice.domain.LocationVO;
+import info.tmingr.weatherservice.domain.WeatherForecast;
+import info.tmingr.weatherservice.domain.WeatherProvider;
 
 import javax.enterprise.context.Dependent;
-import info.tmingr.weatherservice.rest.wuapi.LocationVO;
-import info.tmingr.weatherservice.rest.wuapi.HourForecast;
-import info.tmingr.weatherservice.rest.wuapi.WeatherForecast;
-import info.tmingr.weatherservice.rest.wuapi.WeatherProvider;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -58,7 +53,7 @@ public class WUWeatherProviderImpl implements WeatherProvider {
                     if (state == ForecastJsonState.TEMP) {
                         jp.nextToken();
                         currentTemp = Integer.parseInt(jp.getText());
-                        currentHourForecast.setMinTemp(currentTemp);
+                        currentHourForecast.setTemp(currentTemp);
                     }
                     break;
                 case "FCTTIME":

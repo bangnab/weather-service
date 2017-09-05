@@ -1,4 +1,4 @@
-package info.tmingr.weatherservice.rest.wuapi;
+package info.tmingr.weatherservice.domain;
 
 import java.util.List;
 
